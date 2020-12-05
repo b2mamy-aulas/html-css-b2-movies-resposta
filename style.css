@@ -100,16 +100,16 @@ section{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 1500px;
+    height: 2300px;
     justify-content: center;
 }
 
 .container-section{
     /* background-color: tomato; */
-    height: 1300px;
-    width: 65%;
+    height: 2100px;
     display: flex;
     flex-direction: column;
+    width: 65%;
 }
 
 .div-pesquisa{
@@ -206,4 +206,21 @@ input:focus::-webkit-input-placeholder {
     background-color: transparent;
     border: 2px solid #cd511e;
     color: #cd511e;
+}
+
+.frase{
+    font-weight: 700;
+    font-size: 5rem;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.frase p{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    width: max-content;
+    margin: 0;
 }
