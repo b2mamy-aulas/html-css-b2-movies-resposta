@@ -286,6 +286,7 @@ aside h2{
 .jackie-texto button{
     background-color: transparent;
     border: 2px solid white;
+    color: white;
 }
 
 .jackie-texto button:hover{
@@ -313,5 +314,27 @@ footer{
 }
 
 .footer-container img{
-    width: 50px;
+    width: 70px;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones div{
+    width: 50%;
+    background-color: rgb(24, 24, 22);
+    display: flex;
+}
+
+.icones p{
+    color: white;
+    font-size: 1.9rem;
+    margin: 0;
+}
+.icones-texto{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
 }
