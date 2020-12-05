@@ -19,6 +19,8 @@ nav{
     display: flex;
     height: 100px;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
 }
 
 nav :first-child img{
@@ -106,12 +108,14 @@ section{
     /* background-color: tomato; */
     height: 1300px;
     width: 65%;
+    display: flex;
+    flex-direction: column;
 }
 
 .div-pesquisa{
     display: flex;
-    /* background-color: yellow; */
     flex-direction: column;
+    margin-bottom: 90px;
 }
 
 .div-pesquisa h2{
@@ -128,6 +132,9 @@ section{
     border: 2px solid  rgb(109, 109, 109);
     border-radius: 50px;
     height: 65px;
+    font-family: 'Montserrat';
+    font-size: 2rem;   
+    text-align: center;
     width: 74%;
 }
 
@@ -135,19 +142,68 @@ section{
     color:  rgb(109, 109, 109);
     font-size: 2rem;
     font-family: 'Montserrat';
+    text-align: center;
 } 
 
-
-
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+ }
 
 .div-pesquisa button{
     background-color: rgb(36, 36, 36);
     border-radius: 50px;
     border-style: none;
     color: white;
+    cursor: pointer;
     font-family: 'Montserrat';
     font-size: 1.6rem;
     font-weight: 700;
     height: 71px;
     width: 20%;
+}
+
+.container-filmes{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.container-filmes div{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 450px;
+}
+
+.container-filmes img{
+    width: 210px;
+    height: 300px;
+}
+
+.container-filmes p{
+    font-size: 1.2rem;
+    font-weight: 800;
+    width: 150px;
+    text-align: center;
+}
+
+.container-filmes div button{
+    background-color: #cd511e;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 60px;
+    width: 210px;
+}
+
+.container-filmes div button:hover{
+    background-color: transparent;
+    border: 2px solid #cd511e;
+    color: #cd511e;
 }
