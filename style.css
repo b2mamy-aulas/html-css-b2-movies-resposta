@@ -94,7 +94,7 @@ button:hover{
     color: white;
 }
 
-/* Configurações da primeira section, dos filmes */
+/* Configurações da primeira section */
 
 section{
     align-items: center;
@@ -105,10 +105,9 @@ section{
 }
 
 .container-section{
-    /* background-color: tomato; */
-    height: 2100px;
     display: flex;
     flex-direction: column;
+    height: 2100px;
     width: 65%;
 }
 
@@ -118,7 +117,7 @@ section{
     margin-bottom: 90px;
 }
 
-.div-pesquisa h2{
+.div-pesquisa h2, h2{
     color: rgb(61, 61, 61);
     font-size: 2.1rem;
 }
@@ -190,7 +189,7 @@ input:focus::-webkit-input-placeholder {
     text-align: center;
 }
 
-.container-filmes div button{
+.config-botoes{
     background-color: #cd511e;
     border-radius: 50px;
     border-style: none;
@@ -223,4 +222,96 @@ input:focus::-webkit-input-placeholder {
     color: white;
     width: max-content;
     margin: 0;
+}
+
+/* Configurações do aside */
+
+aside{
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    justify-content: center;
+}
+
+.aside-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+    width: 65%;
+}
+
+aside h2{
+    color: white;
+}
+
+.jackie-container{
+    display: flex;
+    align-items: center;
+}
+
+.jackie-container div{
+    width: 50%;
+}
+
+.jackie-container img{
+    border-radius: 100%;
+    height: 550px;
+    width: 550px;
+}
+
+.jackie-texto{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.jackie-texto h3{
+    color: #cd511e;
+    font-weight: 800;
+    font-size:4rem;
+    margin: 0;
+}
+
+.jackie-texto p{
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 60%;
+}
+
+.jackie-texto button{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.jackie-texto button:hover{
+    background-color: #cd511e;
+    border: 2px solid #cd511e;
+    color: rgb(36, 36, 36);
+}
+/* Configurações do footer */
+
+footer{
+    align-items: center;
+    background-color: #cd511e;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+
+.footer-container{
+    background-color: rosybrown;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 65%;
+}
+
+.footer-container img{
+    width: 50px;
 }
