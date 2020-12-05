@@ -1,0 +1,151 @@
+/* O scroll behavior define o comportamento 
+do scroll quando você clicar nas âncoras. Ele faz uma animação
+para a visualização descer suave :) */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+/* Configurações da Nav */
+
+nav{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+}
+
+nav :first-child img{
+    width: 120px;
+}
+
+nav :nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+}
+
+nav :nth-child(2) a{
+    color: rgb(61, 61, 61);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav :nth-child(2) a:hover{
+    color: orangered;
+}
+
+/* Configurações do header */
+
+header{
+    align-items: center;
+    background-image: url(images/mulhermaravilha.png);
+    background-size: cover;
+    display: flex;
+    height: 900px;
+    justify-content: center;
+}
+
+header div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+    width: 65%;
+}
+
+header div h1{
+    font-size: 8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+header div p{
+    font-size: 3.1rem;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+header div button{
+    background-color: white;
+    border-radius: 50px;
+    border-style: none;
+    color: orangered;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    height: 100px;
+    width: 350px;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Configurações da primeira section, dos filmes */
+
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+    justify-content: center;
+}
+
+.container-section{
+    /* background-color: tomato; */
+    height: 1300px;
+    width: 65%;
+}
+
+.div-pesquisa{
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: column;
+}
+
+.div-pesquisa h2{
+    color: rgb(61, 61, 61);
+    font-size: 2.1rem;
+}
+
+.div-pesquisa div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-pesquisa input{
+    border: 2px solid  rgb(109, 109, 109);
+    border-radius: 50px;
+    height: 65px;
+    width: 74%;
+}
+
+.div-pesquisa input::placeholder{
+    color:  rgb(109, 109, 109);
+    font-size: 2rem;
+    font-family: 'Montserrat';
+}
+
+
+.div-pesquisa button{
+    background-color: rgb(36, 36, 36);
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 71px;
+    width: 20%;
+}
